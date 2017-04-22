@@ -9,11 +9,11 @@ public class Main{
 
         Scanner scannerObject2=new Scanner(System.in);    //GETTING USER INPUT
         System.out.println("Enter max number:");
-        int input2=scannerObject1.nextInt();
+        int input2=scannerObject2.nextInt();
 
         Scanner scannerObject3=new Scanner(System.in);
         System.out.println("Enter number of tries:");   //GETTING USER INPUT
-        int input3=scannerObject1.nextInt();
+        int input3=scannerObject3.nextInt();
 
         Random randomObject=new Random();
         int storage[]=new int[input2+1+input1];
