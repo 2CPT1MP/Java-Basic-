@@ -12,11 +12,11 @@ public class Main{
         int input2=scannerObject1.nextInt();
 
         Scanner scannerObject3=new Scanner(System.in);
-        System.out.println("Enter amount of numbers:");   //GETTING USER INPUT
+        System.out.println("Enter number of tries:");   //GETTING USER INPUT
         int input3=scannerObject1.nextInt();
 
         Random randomObject=new Random();
-        int storage[]=new int[input1+input3+input2];
+        int storage[]=new int[input2+1+input1];
 
         for(int counter=1; counter<=input3; counter++){
             storage[input1+randomObject.nextInt(input2)]+=1;
@@ -26,7 +26,7 @@ public class Main{
         System.out.println("NUMBER \t FREQUENCY");
 
         for(int counter=1; counter<storage.length; counter++){
-            if(storage[counter]!=0){
+            if(counter<=input2 && storage[counter]!=0){
                 System.out.println(counter +"\t" +storage[counter]);
             }
 
